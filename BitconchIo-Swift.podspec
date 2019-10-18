@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "BitconchIo-Swift"
+  spec.name         = "BitconchIo"
   spec.version      = "1.0.0"
   spec.summary      = "Bitconch Chain IO for Swift App"
   spec.swift_version = '4.0'
@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   Bitconch Chain IO for Swift App Developer
                    DESC
 
-  spec.homepage     = "https://github.com/bravely1991/BitconchIo-Swift"
+  spec.homepage     = "https://github.com/bravely1991/BitconchIoSwiftDemo"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

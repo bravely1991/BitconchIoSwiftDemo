@@ -38,6 +38,9 @@ class ViewController: UIViewController {
         /// 生成公私钥
         generatorKeyPair()
         
+        /// 从私钥导出公钥
+        recoverPublicKey()
+        
         // 查询x余额
         refreshBalance(code: code, account: from, symbol: currencySymbol) // After the view loads, we use the RPC provider to get the account's currency balance.
     }
@@ -60,6 +63,16 @@ extension ViewController {
         print("private key: \(pk!.rawPrivateKey())")
         print("public key : \(pub!.rawPublicKey())")
         
+    }
+    
+    /// 从私钥导出公钥
+    func recoverPublicKey() {
+//        private key: 5J78qUfry3y4HsUkCMg1Fh6zunhSdfQo48rxNFLZ3UyFtCHAHiG
+//        public key : BUS79R4Z87cwVgWWLTVz9huvgULpMjTZPPwUWPfmevmRdguddsZdU
+        if let privateKey: PrivateKey = try? PrivateKey(keyString: "5J78qUfry3y4HsUkCMg1Fh6zunhSdfQo48rxNFLZ3UyFtCHAHiG") {
+            let publicKey: PublicKey = PublicKey(privateKey: privateKey)
+            debugPrint(publicKey.rawPublicKey())
+        }
     }
     
     /// 查询余额
