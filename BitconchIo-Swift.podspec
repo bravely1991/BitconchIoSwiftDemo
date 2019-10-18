@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ChainSDK", "ChainSDK/**/*.{h,m,swift}"
+  spec.source_files  = "BitconchIo-Swift", "BitconchIo-Swift/**/*.{swift}"
   # spec.exclude_files = "BitconchIo-Swift/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

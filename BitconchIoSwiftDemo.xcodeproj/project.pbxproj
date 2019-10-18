@@ -15,14 +15,6 @@
 		E9848EAE235562F500B096B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9848EAC235562F500B096B1 /* LaunchScreen.storyboard */; };
 		E9FB704923595EE600BB9D3B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E9FB704823595EE600BB9D3B /* LICENSE */; };
 		E9FB704B23595EEF00BB9D3B /* BitconchIo-Swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E9FB704A23595EEF00BB9D3B /* BitconchIo-Swift.podspec */; };
-		E9FB70812359670700BB9D3B /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB704F2359670700BB9D3B /* KeyPair.swift */; };
-		E9FB70822359670700BB9D3B /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70502359670700BB9D3B /* PublicKey.swift */; };
-		E9FB70832359670700BB9D3B /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70512359670700BB9D3B /* Crypto.swift */; };
-		E9FB70842359670700BB9D3B /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70522359670700BB9D3B /* PrivateKey.swift */; };
-		E9FB70962359670700BB9D3B /* BitconchIoTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB707D2359670700BB9D3B /* BitconchIoTransaction.swift */; };
-		E9FB70972359670700BB9D3B /* BitconchIoSignatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB707E2359670700BB9D3B /* BitconchIoSignatureProvider.swift */; };
-		E9FB70982359670700BB9D3B /* BitconchIoKeySignatureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB707F2359670700BB9D3B /* BitconchIoKeySignatureExtensions.swift */; };
-		E9FB70992359670700BB9D3B /* BitconchIoTransactionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70802359670700BB9D3B /* BitconchIoTransactionExtensions.swift */; };
 		E9FB70C32359686200BB9D3B /* curve-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70A12359686200BB9D3B /* curve-specific.inc */; };
 		E9FB70C42359686200BB9D3B /* platform-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70AA2359686200BB9D3B /* platform-specific.inc */; };
 		E9FB70C52359686200BB9D3B /* secp256k1.table in Resources */ = {isa = PBXBuildFile; fileRef = E9FB70AC2359686200BB9D3B /* secp256k1.table */; };
@@ -42,6 +34,14 @@
 		E9FB70D32359686200BB9D3B /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70C22359686200BB9D3B /* pbkdf2.c */; };
 		E9FB70D523598A9A00BB9D3B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FB70D423598A9A00BB9D3B /* libz.tbd */; };
 		E9FB70D723598AA600BB9D3B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FB70D623598AA600BB9D3B /* libc++.tbd */; };
+		E9FB70DD2359907100BB9D3B /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70D92359907100BB9D3B /* KeyPair.swift */; };
+		E9FB70DE2359907100BB9D3B /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70DA2359907100BB9D3B /* PublicKey.swift */; };
+		E9FB70DF2359907100BB9D3B /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70DB2359907100BB9D3B /* Crypto.swift */; };
+		E9FB70E02359907100BB9D3B /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70DC2359907100BB9D3B /* PrivateKey.swift */; };
+		E9FB70E62359909100BB9D3B /* BitconchIoTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70E22359909100BB9D3B /* BitconchIoTransaction.swift */; };
+		E9FB70E72359909100BB9D3B /* BitconchIoSignatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70E32359909100BB9D3B /* BitconchIoSignatureProvider.swift */; };
+		E9FB70E82359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70E42359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift */; };
+		E9FB70E92359909100BB9D3B /* BitconchIoTransactionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70E52359909100BB9D3B /* BitconchIoTransactionExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,14 +57,6 @@
 		E9FB704823595EE600BB9D3B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		E9FB704A23595EEF00BB9D3B /* BitconchIo-Swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BitconchIo-Swift.podspec"; sourceTree = SOURCE_ROOT; };
 		E9FB704C235964CE00BB9D3B /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
-		E9FB704F2359670700BB9D3B /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
-		E9FB70502359670700BB9D3B /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
-		E9FB70512359670700BB9D3B /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		E9FB70522359670700BB9D3B /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
-		E9FB707D2359670700BB9D3B /* BitconchIoTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoTransaction.swift; sourceTree = "<group>"; };
-		E9FB707E2359670700BB9D3B /* BitconchIoSignatureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoSignatureProvider.swift; sourceTree = "<group>"; };
-		E9FB707F2359670700BB9D3B /* BitconchIoKeySignatureExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoKeySignatureExtensions.swift; sourceTree = "<group>"; };
-		E9FB70802359670700BB9D3B /* BitconchIoTransactionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoTransactionExtensions.swift; sourceTree = "<group>"; };
 		E9FB709C2359686200BB9D3B /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
 		E9FB709D2359686200BB9D3B /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
 		E9FB709E2359686200BB9D3B /* asm_arm.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_arm.inc.h; sourceTree = "<group>"; };
@@ -105,6 +97,14 @@
 		E9FB70C22359686200BB9D3B /* pbkdf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
 		E9FB70D423598A9A00BB9D3B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E9FB70D623598AA600BB9D3B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E9FB70D92359907100BB9D3B /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		E9FB70DA2359907100BB9D3B /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		E9FB70DB2359907100BB9D3B /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		E9FB70DC2359907100BB9D3B /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		E9FB70E22359909100BB9D3B /* BitconchIoTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoTransaction.swift; sourceTree = "<group>"; };
+		E9FB70E32359909100BB9D3B /* BitconchIoSignatureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoSignatureProvider.swift; sourceTree = "<group>"; };
+		E9FB70E42359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoKeySignatureExtensions.swift; sourceTree = "<group>"; };
+		E9FB70E52359909100BB9D3B /* BitconchIoTransactionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoTransactionExtensions.swift; sourceTree = "<group>"; };
 		F64FA8DB58AA808B90B3ABAE /* Pods-BitconchIoSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitconchIoSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-BitconchIoSwiftDemo/Pods-BitconchIoSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,8 +162,9 @@
 		E9848EA2235562F300B096B1 /* BitconchIoSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9FB70E12359909100BB9D3B /* BitconchIo-Swift */,
+				E9FB70D82359907100BB9D3B /* Crypto */,
 				E9FB709A2359686200BB9D3B /* Libraries */,
-				E9FB704D2359670700BB9D3B /* ChainSDK */,
 				E9848EA3235562F300B096B1 /* AppDelegate.swift */,
 				E9848EA5235562F300B096B1 /* ViewController.swift */,
 				E9848EA7235562F300B096B1 /* Main.storyboard */,
@@ -175,37 +176,6 @@
 				E9FB704C235964CE00BB9D3B /* App-Bridging-Header.h */,
 			);
 			path = BitconchIoSwiftDemo;
-			sourceTree = "<group>";
-		};
-		E9FB704D2359670700BB9D3B /* ChainSDK */ = {
-			isa = PBXGroup;
-			children = (
-				E9FB704E2359670700BB9D3B /* Crypto */,
-				E9FB707C2359670700BB9D3B /* BitconchIo-Swift */,
-			);
-			path = ChainSDK;
-			sourceTree = SOURCE_ROOT;
-		};
-		E9FB704E2359670700BB9D3B /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				E9FB704F2359670700BB9D3B /* KeyPair.swift */,
-				E9FB70502359670700BB9D3B /* PublicKey.swift */,
-				E9FB70512359670700BB9D3B /* Crypto.swift */,
-				E9FB70522359670700BB9D3B /* PrivateKey.swift */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		E9FB707C2359670700BB9D3B /* BitconchIo-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				E9FB707D2359670700BB9D3B /* BitconchIoTransaction.swift */,
-				E9FB707E2359670700BB9D3B /* BitconchIoSignatureProvider.swift */,
-				E9FB707F2359670700BB9D3B /* BitconchIoKeySignatureExtensions.swift */,
-				E9FB70802359670700BB9D3B /* BitconchIoTransactionExtensions.swift */,
-			);
-			path = "BitconchIo-Swift";
 			sourceTree = "<group>";
 		};
 		E9FB709A2359686200BB9D3B /* Libraries */ = {
@@ -268,6 +238,28 @@
 			);
 			path = src;
 			sourceTree = "<group>";
+		};
+		E9FB70D82359907100BB9D3B /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				E9FB70D92359907100BB9D3B /* KeyPair.swift */,
+				E9FB70DA2359907100BB9D3B /* PublicKey.swift */,
+				E9FB70DB2359907100BB9D3B /* Crypto.swift */,
+				E9FB70DC2359907100BB9D3B /* PrivateKey.swift */,
+			);
+			path = Crypto;
+			sourceTree = SOURCE_ROOT;
+		};
+		E9FB70E12359909100BB9D3B /* BitconchIo-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E9FB70E22359909100BB9D3B /* BitconchIoTransaction.swift */,
+				E9FB70E32359909100BB9D3B /* BitconchIoSignatureProvider.swift */,
+				E9FB70E42359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift */,
+				E9FB70E52359909100BB9D3B /* BitconchIoTransactionExtensions.swift */,
+			);
+			path = "BitconchIo-Swift";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -387,32 +379,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9FB70972359670700BB9D3B /* BitconchIoSignatureProvider.swift in Sources */,
 				E9FB70C42359686200BB9D3B /* platform-specific.inc in Sources */,
-				E9FB70962359670700BB9D3B /* BitconchIoTransaction.swift in Sources */,
-				E9FB70812359670700BB9D3B /* KeyPair.swift in Sources */,
+				E9FB70E72359909100BB9D3B /* BitconchIoSignatureProvider.swift in Sources */,
 				E9FB70CD2359686200BB9D3B /* ripemd160.c in Sources */,
 				E9FB70D02359686200BB9D3B /* sha3.c in Sources */,
 				E9FB70CC2359686200BB9D3B /* bignum.c in Sources */,
-				E9FB70992359670700BB9D3B /* BitconchIoTransactionExtensions.swift in Sources */,
+				E9FB70E62359909100BB9D3B /* BitconchIoTransaction.swift in Sources */,
+				E9FB70DF2359907100BB9D3B /* Crypto.swift in Sources */,
 				E9FB70C82359686200BB9D3B /* sha2.c in Sources */,
 				E9848EA6235562F300B096B1 /* ViewController.swift in Sources */,
 				E9FB70CA2359686200BB9D3B /* curves.c in Sources */,
+				E9FB70E92359909100BB9D3B /* BitconchIoTransactionExtensions.swift in Sources */,
+				E9FB70DE2359907100BB9D3B /* PublicKey.swift in Sources */,
 				E9FB70CE2359686200BB9D3B /* uECC.c in Sources */,
 				E9FB70D32359686200BB9D3B /* pbkdf2.c in Sources */,
 				E9FB70C32359686200BB9D3B /* curve-specific.inc in Sources */,
 				E9FB70C62359686200BB9D3B /* bip39.c in Sources */,
 				E9FB70D22359686200BB9D3B /* ecdsa.c in Sources */,
 				E9FB70C72359686200BB9D3B /* hmac.c in Sources */,
-				E9FB70832359670700BB9D3B /* Crypto.swift in Sources */,
-				E9FB70982359670700BB9D3B /* BitconchIoKeySignatureExtensions.swift in Sources */,
+				E9FB70DD2359907100BB9D3B /* KeyPair.swift in Sources */,
+				E9FB70E82359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift in Sources */,
 				E9FB70D12359686200BB9D3B /* base58.c in Sources */,
 				E9FB70CF2359686200BB9D3B /* bip32.c in Sources */,
 				E9FB70C92359686200BB9D3B /* rand.c in Sources */,
 				E9FB70CB2359686200BB9D3B /* secp256k1.c in Sources */,
-				E9FB70822359670700BB9D3B /* PublicKey.swift in Sources */,
 				E9848EA4235562F300B096B1 /* AppDelegate.swift in Sources */,
-				E9FB70842359670700BB9D3B /* PrivateKey.swift in Sources */,
+				E9FB70E02359907100BB9D3B /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
