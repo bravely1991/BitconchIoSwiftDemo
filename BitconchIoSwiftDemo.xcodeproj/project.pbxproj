@@ -14,7 +14,6 @@
 		E9848EAB235562F500B096B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9848EAA235562F500B096B1 /* Assets.xcassets */; };
 		E9848EAE235562F500B096B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9848EAC235562F500B096B1 /* LaunchScreen.storyboard */; };
 		E9FB704923595EE600BB9D3B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E9FB704823595EE600BB9D3B /* LICENSE */; };
-		E9FB704B23595EEF00BB9D3B /* BitconchIo-Swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E9FB704A23595EEF00BB9D3B /* BitconchIo-Swift.podspec */; };
 		E9FB70C32359686200BB9D3B /* curve-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70A12359686200BB9D3B /* curve-specific.inc */; };
 		E9FB70C42359686200BB9D3B /* platform-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70AA2359686200BB9D3B /* platform-specific.inc */; };
 		E9FB70C52359686200BB9D3B /* secp256k1.table in Resources */ = {isa = PBXBuildFile; fileRef = E9FB70AC2359686200BB9D3B /* secp256k1.table */; };
@@ -42,6 +41,7 @@
 		E9FB70E72359909100BB9D3B /* BitconchIoSignatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70E32359909100BB9D3B /* BitconchIoSignatureProvider.swift */; };
 		E9FB70E82359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70E42359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift */; };
 		E9FB70E92359909100BB9D3B /* BitconchIoTransactionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70E52359909100BB9D3B /* BitconchIoTransactionExtensions.swift */; };
+		E9FB70F12359EA3C00BB9D3B /* BitconchIo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E9FB70F02359EA3C00BB9D3B /* BitconchIo.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +55,6 @@
 		E9848EAD235562F500B096B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9848EAF235562F500B096B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9FB704823595EE600BB9D3B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		E9FB704A23595EEF00BB9D3B /* BitconchIo-Swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BitconchIo-Swift.podspec"; sourceTree = SOURCE_ROOT; };
 		E9FB704C235964CE00BB9D3B /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9FB709C2359686200BB9D3B /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
 		E9FB709D2359686200BB9D3B /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		E9FB70E32359909100BB9D3B /* BitconchIoSignatureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoSignatureProvider.swift; sourceTree = "<group>"; };
 		E9FB70E42359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoKeySignatureExtensions.swift; sourceTree = "<group>"; };
 		E9FB70E52359909100BB9D3B /* BitconchIoTransactionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitconchIoTransactionExtensions.swift; sourceTree = "<group>"; };
+		E9FB70F02359EA3C00BB9D3B /* BitconchIo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BitconchIo.podspec; sourceTree = SOURCE_ROOT; };
 		F64FA8DB58AA808B90B3ABAE /* Pods-BitconchIoSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitconchIoSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-BitconchIoSwiftDemo/Pods-BitconchIoSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,7 +172,7 @@
 				E9848EAC235562F500B096B1 /* LaunchScreen.storyboard */,
 				E9848EAF235562F500B096B1 /* Info.plist */,
 				E9FB704823595EE600BB9D3B /* LICENSE */,
-				E9FB704A23595EEF00BB9D3B /* BitconchIo-Swift.podspec */,
+				E9FB70F02359EA3C00BB9D3B /* BitconchIo.podspec */,
 				E9FB704C235964CE00BB9D3B /* App-Bridging-Header.h */,
 			);
 			path = BitconchIoSwiftDemo;
@@ -322,8 +322,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9848EAE235562F500B096B1 /* LaunchScreen.storyboard in Resources */,
-				E9FB704B23595EEF00BB9D3B /* BitconchIo-Swift.podspec in Resources */,
 				E9848EAB235562F500B096B1 /* Assets.xcassets in Resources */,
+				E9FB70F12359EA3C00BB9D3B /* BitconchIo.podspec in Resources */,
 				E9FB70C52359686200BB9D3B /* secp256k1.table in Resources */,
 				E9848EA9235562F300B096B1 /* Main.storyboard in Resources */,
 				E9FB704923595EE600BB9D3B /* LICENSE in Resources */,
