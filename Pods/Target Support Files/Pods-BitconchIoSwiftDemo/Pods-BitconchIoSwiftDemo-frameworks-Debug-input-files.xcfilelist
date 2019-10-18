@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-BitconchIoSwiftDemo/Pods-BitconchIoSwiftDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework
+${BUILT_PRODUCTS_DIR}/EosioSwift/EosioSwift.framework
+${BUILT_PRODUCTS_DIR}/EosioSwiftAbieosSerializationProvider/EosioSwiftAbieosSerializationProvider.framework
+${BUILT_PRODUCTS_DIR}/EosioSwiftEcc/EosioSwiftEcc.framework
+${BUILT_PRODUCTS_DIR}/EosioSwiftSoftkeySignatureProvider/EosioSwiftSoftkeySignatureProvider.framework
+${PODS_ROOT}/GRKOpenSSLFramework/OpenSSL-iOS/bin/openssl.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework
+${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework
