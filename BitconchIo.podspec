@@ -139,5 +139,6 @@ Pod::Spec.new do |spec|
   spec.dependency "EosioSwift", "~> 0.1.1"
   spec.dependency "EosioSwiftAbieosSerializationProvider", "~> 0.1.1"
   spec.dependency "EosioSwiftSoftkeySignatureProvider", "~> 0.1.1"
+  spec.dependency "GRKOpenSSLFramework"
 
 end
