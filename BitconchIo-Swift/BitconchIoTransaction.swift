@@ -21,7 +21,7 @@ struct TransferActionData: Codable {
     var memo: String = ""
 }
 
-struct TransactionParameter {
+public struct TransactionParameter {
     var endpoint: URL
     var code: String = ""
     var from: String = ""
@@ -30,7 +30,7 @@ struct TransactionParameter {
     var memo: String = ""
     var privateKeys: [String] = [""]
     
-    init(endpoint: URL, code: String, from: String, to: String, quantity: String, memo: String,  privateKeys: [String]) {
+    public init(endpoint: URL, code: String, from: String, to: String, quantity: String, memo: String,  privateKeys: [String]) {
         self.endpoint = endpoint
         self.code = code
         self.from = from
@@ -42,7 +42,7 @@ struct TransactionParameter {
 
 }
 
-class BitconchIoTransaction {
+public class BitconchIoTransaction {
     // Executed when the "Send Tokens" button is tapped.
     static public func executeTransferTransaction(parameter: TransactionParameter, completion: @escaping (EosioResult<Bool, EosioError>, String) -> Void
         ) {
