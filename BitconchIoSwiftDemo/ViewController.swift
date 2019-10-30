@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     // Transfer action data variables
     let from = "helloworld1a"
     let to = "helloworld1b"
+    let from_address = "B5AxZ1vdK9r6JeLXUjShRXcd4Wzf874VTathjr8ibnQE72npue6"
+    let to_address = "B5pfwUdBDTDLLvuLMN8TvMbmMqn2adUEBk3kSEuFkMaxbjaw5dr"
     let quantity = "1.0000 BUS" // override if needed (e.g., "1.0000 BUS")
     let memo = "bravus test" // override if needed
     
@@ -51,7 +53,7 @@ extension ViewController {
         super.touchesBegan(touches, with: event)
         print("send token")
         
-        excuteTransaction()
+        excuteTransactionExt()
     }
 }
 
@@ -102,6 +104,24 @@ extension ViewController {
         let parameter = TransactionParameter(endpoint: self.endpoint, code: self.code, from: self.from, to: self.to, quantity: self.quantity, memo: self.memo, privateKeys: self.privateKeys)
         
         BitconchIoTransaction.executeTransferTransaction(parameter: parameter) { (result, body) in
+            // Handle our result, success or failure, appropriately.
+            switch result {
+            case .failure (let error):
+                print("ERROR SIGNING OR BROADCASTING TRANSACTION")
+                print(error)
+                print(error.reason)
+            case .success:
+                print(body)
+            }
+        }
+    }
+    
+    /// 测试交易并返回交易体ext
+    func excuteTransactionExt() {
+        /// 执行交易，获取交易体
+        let parameter = TransactionParameterExt(endpoint: self.endpoint, code: self.code, from: self.from, from_address: self.from_address, to_address: self.to_address, quantity: self.quantity, memo: self.memo, privateKeys: self.privateKeys)
+        
+        BitconchIoTransaction.executeTransferTransactionExt(parameter: parameter) { (result, body) in
             // Handle our result, success or failure, appropriately.
             switch result {
             case .failure (let error):

@@ -13,6 +13,7 @@
 		E9848EA9235562F300B096B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9848EA7235562F300B096B1 /* Main.storyboard */; };
 		E9848EAB235562F500B096B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9848EAA235562F500B096B1 /* Assets.xcassets */; };
 		E9848EAE235562F500B096B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9848EAC235562F500B096B1 /* LaunchScreen.storyboard */; };
+		E992EEEE2369D473003AD416 /* BitconchIoNameExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992EEED2369D473003AD416 /* BitconchIoNameExtensions.swift */; };
 		E9FB704923595EE600BB9D3B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E9FB704823595EE600BB9D3B /* LICENSE */; };
 		E9FB70C32359686200BB9D3B /* curve-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70A12359686200BB9D3B /* curve-specific.inc */; };
 		E9FB70C42359686200BB9D3B /* platform-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = E9FB70AA2359686200BB9D3B /* platform-specific.inc */; };
@@ -54,6 +55,7 @@
 		E9848EAA235562F500B096B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9848EAD235562F500B096B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9848EAF235562F500B096B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E992EEED2369D473003AD416 /* BitconchIoNameExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitconchIoNameExtensions.swift; sourceTree = "<group>"; };
 		E9FB704823595EE600BB9D3B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		E9FB704C235964CE00BB9D3B /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9FB709C2359686200BB9D3B /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				E9FB70E32359909100BB9D3B /* BitconchIoSignatureProvider.swift */,
 				E9FB70E42359909100BB9D3B /* BitconchIoKeySignatureExtensions.swift */,
 				E9FB70E52359909100BB9D3B /* BitconchIoTransactionExtensions.swift */,
+				E992EEED2369D473003AD416 /* BitconchIoNameExtensions.swift */,
 			);
 			path = "BitconchIo-Swift";
 			sourceTree = SOURCE_ROOT;
@@ -394,6 +397,7 @@
 				E9FB70CE2359686200BB9D3B /* uECC.c in Sources */,
 				E9FB70D32359686200BB9D3B /* pbkdf2.c in Sources */,
 				E9FB70C32359686200BB9D3B /* curve-specific.inc in Sources */,
+				E992EEEE2369D473003AD416 /* BitconchIoNameExtensions.swift in Sources */,
 				E9FB70C62359686200BB9D3B /* bip39.c in Sources */,
 				E9FB70D22359686200BB9D3B /* ecdsa.c in Sources */,
 				E9FB70C72359686200BB9D3B /* hmac.c in Sources */,
