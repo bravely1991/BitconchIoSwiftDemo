@@ -10,9 +10,9 @@ import Foundation
 import EosioSwift
 
 extension EosioName {
-
     /// Init with a String.
-//    public func name(address: String) {
+//    public init(address: String) {
+//        self.init()
 //        self.string = address
 //    }
 }

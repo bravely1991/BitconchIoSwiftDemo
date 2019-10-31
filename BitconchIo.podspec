@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BitconchIo"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "Bitconch Chain IO for Swift App"
   spec.swift_version = '4.0'
 

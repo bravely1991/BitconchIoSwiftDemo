@@ -120,26 +120,26 @@ public class BitconchIoTransaction {
             case .success:
                 print(body)
             }
+            completion(result, body)
         }
     }
-    
-    // Executed when the "Send Tokens" button is tapped.
+
     static public func executeTransferTransactionExt(parameter: TransactionParameterExt, completion: @escaping (EosioResult<Bool, EosioError>, String) -> Void
         ) {
-        
+
         let rpcProvider: EosioRpcProvider = EosioRpcProvider(endpoint: parameter.endpoint)
         let serializationProvider = EosioAbieosSerializationProvider()
         let signatureProvider = try! BitconchIoSignatureProvider(privateKeys: parameter.privateKeys)
-        
+
         let transactionFactory: EosioTransactionFactory = EosioTransactionFactory(
             rpcProvider: rpcProvider,
             signatureProvider: signatureProvider,
             serializationProvider: serializationProvider
         )
-        
+
         // Get a new transaction from our transaction factory.
         let transaction = transactionFactory.newTransaction()
-        
+
         // Set up our transfer action.
         let action = try! EosioTransaction.Action(
             account: EosioName(parameter.code),
@@ -155,10 +155,10 @@ public class BitconchIoTransaction {
                 memo: parameter.memo
             )
         )
-        
+
         // Add that action to the transaction.
         transaction.add(action: action)
-        
+
         // Sign and return Body
         // Remember, you can also get promises back with: `transaction.signAndBroadcast(.promise)`.
         transaction.signOffLine { (result, body) in
@@ -171,6 +171,7 @@ public class BitconchIoTransaction {
             case .success:
                 print(body)
             }
+            completion(result, body)
         }
     }
 
